@@ -4,8 +4,10 @@
   import Counter from './lib/Counter.svelte'
   import './app.css'
   import Table from './table.svelte'
+  import MyForm from './form.svelte'
   let totalCompetitions = 0
   let totalOrganisations = 0
+
 </script>
 
 <main>
@@ -23,11 +25,11 @@
 
       </div>
       <div>
-      Submit a competition <button class="rounded-none bg-white text-black">here</button>
+      Submit a competition <a href="https://airtable.com/appHETbcQa0XSzVGP/shrG20EaMH7a0RG7M" target="_blank" rel="noopener noreferrer" class=" bg-white  hover:bg-blue-500 mb-1 text-2xl btn rounded-full font-bold text-black"><span class="text-2xl">here</span></a>
       </div>
       <div class="flex justify-end">
-      <span class="text-right">
-      Contact
+      <span class="text-right py-2">
+      <a  target="_blank" rel="noopener noreferrer" href="https://yoitsyoung.xyz/about.html">Contact</a>
       </span>
       </div>
     </div>
@@ -51,18 +53,23 @@
   organizations
 </blockquote>
 
-
-  <div >
+<div class="grid grid-cols-5">
+  <div class="col-span-4">
     <iframe class="airtable-embed" src="https://airtable.com/embed/appHETbcQa0XSzVGP/shraldA2MygP5UXDW?backgroundColor=redDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
   </div>
+  <div class="px-4 flex justify-end text-right">
+  <MyForm />
   </div>
+</div>
+  </div>
+
 
 
 </main>
 
 <style>
   @import url('https://gthomas-appfolio.github.io/bootstrap-coastline/bootstrap-coastline.css');
-  .logo {
+  /* .logo {
     height: 6em;
     padding: 1.5em;
     will-change: filter;
@@ -76,5 +83,5 @@
   }
   .read-the-docs {
     color: #888;
-  }
+  } */
 </style>
