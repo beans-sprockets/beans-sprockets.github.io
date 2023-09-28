@@ -5,8 +5,8 @@
   import './app.css'
   import Table from './table.svelte'
   import MyForm from './form.svelte'
-  let totalCompetitions = 0
-  let totalOrganisations = 0
+  let totalCompetitions = 41
+  let totalOrganisations = 36
 
 </script>
 
@@ -57,9 +57,8 @@
   <div class="col-span-4">
     <iframe class="airtable-embed" src="https://airtable.com/embed/appHETbcQa0XSzVGP/shraldA2MygP5UXDW?backgroundColor=redDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
   </div>
-  <div class="px-4 flex justify-end text-right">
-  <MyForm />
-  </div>
+  <div class="px flex justify-end text-right">
+  <iframe class="airtable-embed" src="https://airtable.com/embed/appHETbcQa0XSzVGP/shrndGbnJYlsLpfUG?backgroundColor=redDusty" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>  </div>
 </div>
   </div>
 
