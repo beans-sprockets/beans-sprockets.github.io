@@ -19,6 +19,6 @@ export default {
     })
   },
   paths: {
-    base: dev ? '' : '/competitions-fyi/',
+    base: '/competitions-fyi/',
   }
 }
