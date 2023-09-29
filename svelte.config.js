@@ -1,4 +1,7 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import adapter from '@sveltejs/adapter-static';
+const dev = "production" === "development";
+
 
 export default {
   // Consult https://svelte.dev/docs#compile-time-svelte-preprocess
@@ -16,6 +19,6 @@ export default {
     })
   },
   paths: {
-    base: '/competitions-fyi/',
+    base: dev ? '' : '/competitions-fyi/',
   }
 }
