@@ -5,6 +5,10 @@
   import './app.css'
   import Table from './table.svelte'
   import MyForm from './form.svelte'
+  import SvelteSeo from "svelte-seo";
+  let title="Competitions.fyi -- Undergrad Quant, Trading, Consulting, Case, Stock, Competitions"
+  let description="[LIVE] Get first dibs on competitions, showcase your skills to employers. Updated and refreshed regularly."
+  let base_url="https://www.competitions.fyi"
   let totalCompetitions = 41
   let totalOrganisations = 36
 
@@ -19,6 +23,38 @@
       <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
     </a>
   </div> -->
+  <SvelteSeo
+  title="{title}"
+  description="{description}"
+  keywords="competitions undergrad quant trading consulting case stock pitch win lose first careers stand out"
+  openGraph={{
+    title: "Competitions.fyi -- Undergrad Quant, Trading, Consulting, Case, Stock, Competitions",
+    description:"[LIVE] Get first dibs on competitions, showcase your skills to employers. Updated and refreshed regularly.",
+    url: "https://competitions.fyi",
+    type: "website",
+    images: [
+
+    ],
+  site_name: "Competitions.fyi",
+  }}
+  twitter={{
+    card: "summary_large_image",
+    site: "@competitions_fyi",
+    title: "Competitions.fyi -- Undergrad Quant, Trading, Consulting, Case, Stock, Competitions",
+    description:
+      "[LIVE] Get first dibs on competitions, showcase your skills to employers. Updated and refreshed regularly.",
+    image: "",
+  }}
+  jsonLd={{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Competitions.fyi -- Undergrad Quant, Trading, Consulting, Case, Stock, Competitions",
+  description:
+    "[LIVE] Get first dibs on competitions, showcase your skills to employers. Updated and refreshed regularly.",
+  url: "https://competitions.fyi",
+}}
+
+  />
   <header class="bg-cyan-500 text-2xl mb-12 md:text-center p-7 text-white">
     <div class="grid grid-cols-3 px-20">
       <div>
@@ -55,10 +91,10 @@
 
 <div class="grid grid-cols-5">
   <div class="col-span-4">
-    <iframe class="airtable-embed" src="https://airtable.com/embed/appHETbcQa0XSzVGP/shraldA2MygP5UXDW?backgroundColor=redDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    <iframe  title="Table of Competitions" class="airtable-embed" src="https://airtable.com/embed/appHETbcQa0XSzVGP/shraldA2MygP5UXDW?backgroundColor=redDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
   </div>
   <div class="px flex justify-end text-right">
-  <iframe class="airtable-embed" src="https://airtable.com/embed/appHETbcQa0XSzVGP/shrndGbnJYlsLpfUG?backgroundColor=redDusty" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>  </div>
+  <iframe title="Form for mailing list signups" class="airtable-embed" src="https://airtable.com/embed/appHETbcQa0XSzVGP/shrndGbnJYlsLpfUG?backgroundColor=redDusty" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>  </div>
 </div>
   </div>
 
