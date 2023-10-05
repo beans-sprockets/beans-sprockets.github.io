@@ -32,7 +32,13 @@
     url: "https://competitions.fyi",
     type: "website",
     images: [
-
+      {
+        secure_url: "https://competitions.fyi/competitions_landing_page.jpg",
+        url: "https://competitions.fyi/competitions_landing_page.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Landing Page for Competitions.fyi",
+      }
     ],
   site_name: "Competitions.fyi",
   }}
@@ -42,7 +48,7 @@
     title: "Competitions.fyi -- Undergrad Quant, Trading, Consulting, Case, Stock, Competitions",
     description:
       "[LIVE] Get first dibs on competitions, showcase your skills to employers. Updated and refreshed regularly.",
-    image: "",
+    image: "https://competitions.fyi/competitions_landing_page.jpg",
   }}
   jsonLd={{
   "@context": "https://schema.org",
